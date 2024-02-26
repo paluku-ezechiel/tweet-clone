@@ -1,15 +1,18 @@
 import React from "react";
 import { Author } from "./Tweet-Title-Author";
-import image from "../icons/GroupePhoto.svg";
+import { Tweet_title_detail } from "./Tweet-title-details";
 
 
-export const TwitterTitle = () =>{
+
+export const TwitterTitle = (props) =>{
 
     return(
         <div className="tweet-title">
-            <Author/>
-            <img src={image}/>
-            {/* <img src={photoGroupe}/> */}
+            <Author author={props.tweetTitle.tweet_title_author} />
+            <img src={props.tweetTitle.image}/>
+            <Tweet_title_detail tweetTitleDetail={props.tweetTitle.tweet_title_details}/>
+            <Tweet_title_detail tweetTitleDetail={props.tweetTitle.dotter}/>
+            <Tweet_title_detail tweetTitleDetail={props.tweetTitle.date}/>
         </div>
     )
 }

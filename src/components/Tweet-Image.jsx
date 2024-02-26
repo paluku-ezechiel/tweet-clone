@@ -2,9 +2,9 @@ import React from "react";
 import photo from "../images/imagePhoto.png";
 
 
-export const TweetImage = () =>{
+export const TweetImage = (props) =>{
 
    return(
-    <img src={photo}/>
+    <img src={props.tweetImage}/>
    )
 }

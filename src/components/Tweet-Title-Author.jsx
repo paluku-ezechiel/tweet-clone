@@ -1,9 +1,10 @@
 import React from "react";
 
-export const Author = () => {
+export const Author = (props) => {
+    // console.log()
     return(
         <div className="tweet-title-author">
-            The New York Times
+            {props.author}
         </div>
     )
 }

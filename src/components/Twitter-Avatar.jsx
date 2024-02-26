@@ -1,9 +1,12 @@
 import React from "react";
-import avatar from '../icons/avatar.svg';
+// import { tweet_data } from "./Data";
 
-export const TwitterAvatar = () =>{
-    return (
-    <div className="tweet-avatar">
-        <img src={avatar}/>
-    </div>)
+export function TwitterAvatar (props){
+    // console.log()
+        return (
+            <div className="tweet-avatar">
+                <img src={props.avatar}/>
+            </div>)
+
+    
 }
