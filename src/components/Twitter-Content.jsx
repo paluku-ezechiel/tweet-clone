@@ -2,12 +2,12 @@ import React from "react";
 import { TweetBody } from "./Tweet-Body";
 import { TweetAction } from "./Tweet-Actions";
 
-export const TwitterContent = (props) =>{
-// console.log(props.tweetContent.tweet_body);
+export const TwitterContent = ({tweetContent, order}) =>{
+    
     return(
         <div className="tweet-content">
-            <TweetBody tweetBody={props.tweetContent.tweet_body}/>
-            <TweetAction tweetAction={props.tweetContent.tweet_actions}/>
+            <TweetBody tweetBody={tweetContent.tweet_body} order={order}/>
+            <TweetAction tweetAction={tweetContent.tweet_actions}/>
         </div>
     )
 }

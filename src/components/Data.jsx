@@ -1,11 +1,11 @@
 import React from "react";
+import Like from "../icons/Like";
+import Share from "../icons/Share";
+import Replay from "../icons/Replay";
+import Reposte from "../icons/Reposte";
 import {
   avatar,
   tweet_image,
-  button,
-  button1,
-  button2,
-  button3,
   photo,
   image,
   twitter,
@@ -29,19 +29,19 @@ export const tweet_data = [
       },
       tweet_actions: {
         tweet_action1: {
-          image: button,
+          image: <Like />,
           chiffre: "57",
         },
         tweet_action2: {
-          image: button1,
+          image: <Replay/>,
           chiffre: "144",
         },
         tweet_action3: {
-          image: button2,
+          image: <Reposte />,
           chiffre: "184",
         },
         tweet_action4: {
-          image: button3,
+          image: <Share/>,
           chiffre: undefined,
         },
       },
@@ -65,19 +65,19 @@ export const tweet_data = [
       },
       tweet_actions: {
         tweet_action1: {
-          image: button,
+          image: <Like />,
           chiffre: "19",
         },
         tweet_action2: {
-          image: button1,
+          image: <Replay />,
           chiffre: "48",
         },
         tweet_action3: {
-          image: button2,
+          image: <Reposte />,
           chiffre: "482",
         },
         tweet_action4: {
-          image: button3,
+          image: <Share />,
           chiffre: undefined,
         },
       },
@@ -100,19 +100,19 @@ export const tweet_data = [
       },
       tweet_actions: {
         tweet_action1: {
-          image: button,
+          image: <Like />,
           chiffre: "6.8K",
         },
         tweet_action2: {
-          image: button1,
+          image: <Replay />,
           chiffre: "36.6K",
         },
         tweet_action3: {
-          image: button2,
+          image: <Reposte />,
           chiffre: "267.1K",
         },
         tweet_action4: {
-          image: button3,
+          image: <Share />,
           chiffre: undefined,
         },
       },
@@ -135,19 +135,19 @@ export const tweet_data = [
       },
       tweet_actions: {
         tweet_action1: {
-          image: button,
+          image: <Like />,
           chiffre: "118.7K",
         },
         tweet_action2: {
-          image: button1,
+          image: <Replay />,
           chiffre: "785.4K",
         },
         tweet_action3: {
-          image: button2,
+          image: <Reposte />,
           chiffre: "3.3M",
         },
         tweet_action4: {
-          image: button3,
+          image: <Share />,
           chiffre: undefined,
         },
       },

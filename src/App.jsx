@@ -1,14 +1,15 @@
 import React from "react";
-import Time from "./components/TimeLine";
-import "./App.css"
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
+  return (
+    <>
+      <Sidebar />
+      <Outlet />
+    </>
+  );
+};
 
-  return(
-    <Time>
-
-    </Time>
-  )
-}
-
-export default App
+export default App;

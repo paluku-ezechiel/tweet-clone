@@ -8,6 +8,7 @@ function Time() {
 
     return(
         <div className="timeline">
+            
             <Header/>
             <Editor/>
             <Tweets/>

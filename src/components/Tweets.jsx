@@ -5,8 +5,8 @@ import { tweet_data } from "./Data";
 export const Tweets = () => {
   return (
     <div className="tweets">
-      {tweet_data.map((param, key) => {
-        return <Tweet key={key} param={param} />;
+      {tweet_data.map((param, index) => {
+        return <Tweet key={index} param={param} order={index}/>;
       })}
     </div>
   );
